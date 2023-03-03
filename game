@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Find the mouse by ChatGPT</title>
+  <style>
+    /* Add your styles here */
+    header {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+    #bushes, #penalty {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    #help {
+      margin-top: 20px;
+      text-align: left;
+      display: none;
+    }
+    .game-row {
+      display: flex;
+    }
+    .game-cell {
+      width: calc(100% / 6);
+      padding: 10px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Find the mouse by ChatGPT</h1>
+  </header>
+  <main>
+    <p>Click on the bushes to search for the mouse, beware the cat.</p>
+    <div id="bushes">Number of bushes checked is zero.</div>
+    <div id="penalty">Penalty is zero.</div>
+    <p>Click for help.</p>
+    <div id="help">
+      <h2>Help report</h2>
+      <p>If you find the mouse, your score will increase by 10 points. If you click on the cat, your score will decrease by 5 points.</p>
+      <p>The game ends when you find the mouse or when you have clicked on 10 bushes.</p>
+    </div>
+    <div class="game-row">
+      <div class="game-cell"><img src="starting_image.jpg"></div>
+      <div class="game-cell"><img src="starting_image.jpg"></div>
+      <div class="game-cell"><img src="starting_image.jpg"></div>
+      <div class="game-cell"><img src="starting_image.jpg"></div>
+      <div class="game-cell"><img src="starting_image.jpg"></div>
+      <div class="game-cell"><img src="starting_image.jpg"></div>
+    </div>
+    <div class="game-row">
+      <div class="game-cell"><img src="starting_image.jpg"></div>
+      <div class="game-cell"><img src="starting_image.jpg"></div>
+      <div class="game-cell"><img src="starting_image.jpg"></div>
+      <div class="game-cell"><img src="starting_image.jpg"></div>
+      <div class="game-cell"><img src="starting_image.jpg"></div>
+      <div class="game-cell"><img src="starting_image.jpg"></div>
+    </div>
+    <div class="game-row">
+      <div class="game-cell"><img src="starting_image.jpg"></div>
+      <div class="game-cell"><img src="starting_image.jpg"></div>
+      <div class="game-cell"><img src="starting_image.jpg"></div>
+      <div class="game-cell"><img src="starting_image.jpg"></div>
+      <div class="game-cell"><img src="starting_image.jpg"></div>
+      <div class="game-cell"><img src="starting_image.jpg"></div>
+    </div>
+    <div class="game-row">
+      <div class="game-cell"><img
