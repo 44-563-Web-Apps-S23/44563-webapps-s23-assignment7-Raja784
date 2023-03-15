@@ -1,42 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <title>Find the mouse by Raja Manda</title>
-  <style>
-    /* Add your styles here */
-    
+  <title>This is BootStrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+  integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" 
+  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" 
+  integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
 
-    #bushes,
-    #penalty {
-      margin-top: 20px;
-      font-weight: bold;
-    }
-
-    #help {
-      margin-top: 20px;
-      text-align: left;
-      display: none;
-    }
-  </style>
 </head>
-
 <body>
-  <header>
-    <h1>Find the mouse by Raja Manda</h1>
-  </header>
-  <main>
-    <p>Click on the bushes to search for the mouse, beware the cat.</p>
-    <div id="bushes">Number of bushes checked is zero.</div>
-    <div id="penalty">Penalty is zero.</div>
-    <p>Click for help.</p>
-    <div id="help">
-      <h2>Help report</h2>
-      <p>If you find the mouse, your score will increase by 10 points. If you click on the cat, your score will decrease
-        by 5 points.</p>
-      <p>The game ends when you find the mouse or when you have clicked on 10 bushes.</p>
+
+<div class="container-fluid container">
+  <h1>Raja</h1>
+  <p>Click on the bushes to search for the mouse, beware the cat.</p>
+  <p class="well" id="bushes">Number of bushes checked is zero.</p>
+  <p class="well" id="penalty">Penalty is zero.</p>
+  <p class="well" id="help" >Help report</p>
+  <p class="btn btn-primary" onclick="help()" >Click for help.</p>
+  <p></p>
+  
+</div>
+
+<div class="container ">
+  <div class="row">
+    <div class="col-sm">
+      <img src="bush.jpg" class="img" width="150" height="150" id="101" onclick="check(0)"/>
     </div>
-  </main>
-  <script>
+    <div class="col-sm">
+      <img src="bush.jpg" class="img" width="150" height="150" id="102" onclick="check(1)"/>
+    </div>
+    <div class="col-sm">
+      <img src="bush.jpg" class="img" width="150" height="150" id="103" onclick="check(2)"/>
+    </div>
+    <div class="col-sm">
+      <img src="bush.jpg" class="img" width="150" height="150" id="104" onclick="check(3)"/>
+    </div>
+    <div class="col-sm">
+      <img src="bush.jpg" class="img" width="150" height="150" id="105" onclick="check(4)"/>
+    </div>
+    <div class="col-sm">
+      <img src="bush.jpg" class="img" width="150" height="150" id="106" onclick="check(5)"/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <img src="bush.jpg" class="img" width="150" height="150" id="107" onclick="check(6)"/>
+    </div>
+    <div class="col-sm">
+      <img src="bush.jpg" class="img" width="150" height="150" id="108" onclick="check(7)"/>
+    </div>
+    <div class="col-sm">
+      <img src="bush.jpg" class="img" width="150" height="150" id="109" onclick="check(8)"/>
+    </div>
+    <div class="col-sm">
+      <img src="bush.jpg" class="img" width="150" height="150" id="110" onclick="check(9)"/>
+    </div>
+    <div class="col-sm">
+      <img src="bush.jpg" class="img" width="150" height="150" id="111" onclick="check(10)"/>
+    </div>
+    <div class="col-sm">
+      <img src="bush.jpg" class="img" width="150" height="150" id="112" onclick="check(11)"/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <img src="bush.jpg" class="img" width="150" height="150" id="113" onclick="check(12)"/>
+    </div>
+    <div class="col-sm">
+      <img src="bush.jpg" class="img" width="150" height="150" id="114" onclick="check(13)"/>
+    </div>
+    <div class="col-sm">
+      <img src="bush.jpg" class="img" width="150" height="150" id="115" onclick="check(14)"/>
+    </div>
+    <div class="col-sm">
+      <img src="bush.jpg"  class="img" width="150" height="150" id="116" onclick="check(15)"/>
+    </div>
+    <div class="col-sm">
+      <img src="bush.jpg" class="img" width="150" height="150" id="117" onclick="check(16)"/>
+    </div>
+    <div class="col-sm">
+      <img src="bush.jpg" class="img" width="150" height="150" id="118" onclick="check(17)"/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <img src="bush.jpg" class="img" width="150" height="150" id="119" onclick="check(18)"/>
+    </div>
+    <div class="col-sm">
+      <img src="bush.jpg" class="img" width="150" height="150" id="120" onclick="check(19)"/>
+    </div>
+    <div class="col-sm">
+      <img src="bush.jpg" class="img" width="150" height="150" id="121" onclick="check(20)"/>
+    </div>
+    <div class="col-sm">
+      <img src="bush.jpg" class="img" width="150" height="150" id="122" onclick="check(21)"/>
+    </div>
+    <div class="col-sm">
+      <img src="bush.jpg" class="img" width="150" height="150" id="123" onclick="check(22)"/>
+    </div>
+    <div class="col-sm">
+      <img src="bush.jpg" class="img" width="150" height="150" id="124" onclick="check(23)"/>
+    </div>
+  </div>
+</div>
+<script>
+var ids=[101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124];
+var checkCount=0;
+var penalty=0;
+var lastCheck=0;
+var mouseLocation=13;
+var catLocation=21;
+var gameOver=false;
+function check(x){
+  console.log('in fun'+x);
+  console.log('ids[x] fun'+ids[x]);
+  var imageid=ids[x];
+  console.log('gameOver',gameOver);
+  if(!gameOver){
     
+  var imgval=document.getElementById(imageid);
+   if (x==21){
+    document.getElementById(imageid).src="Lion.jpg";
+    gameOver=true;
+    penalty=penalty+4;
+  }
+  else if (x==13){
+    document.getElementById(imageid).src="mouse.jpg";
+    gameOver=true;
+    penalty=penalty-3;
+
+  }else{
+    document.getElementById(imageid).src="grass.jpg";
+  }
+  checkCount=checkCount+1;
+  penalty=penalty+1;
+  document.getElementById("bushes").innerHTML='Number of bushes checked is '+checkCount;
+
+lastCheck=x;
+document.getElementById("penalty").innerHTML='Penalty is '+penalty;
+}
+
+}
+function help() {
+        var mouseRowval = parseInt(mouseLocation / 6) ;
+        var mouseColval = mouseLocation % 6; 
+        var columnval = lastCheck % 6 ;
+        var catRowval = parseInt(catLocation / 6) ;
+        var catColval = catLocation % 6;
+        var rowval = parseInt(lastCheck / 6) ;
+
+        
+        
+        if ((Math.abs(catRowval - rowval) <= 1) && (Math.abs(catColval - columnval) <= 1)) { 
+            document.getElementById("help").innerHTML = "Help report: meow";
+        }else if ((Math.abs(mouseRowval - rowval) <= 1) && (Math.abs(mouseColval - columnval) <= 1)) {
+            document.getElementById("help").innerHTML = "Help report: squeek";
+        }else {
+            document.getElementById("help").innerHTML = "Help report: sorry, no help available";
+        }
+        penalty += 2;
+        document.getElementById("penalty").innerHTML = "Penalty is " + penalty;
+    }
+
+</script>
+
+
+</body>
+</html>
